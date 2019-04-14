@@ -1,0 +1,162 @@
+@media(max-width : 991px){
+    .contact {
+        padding: 70px 0 !important;
+    }
+}
+.contact{
+    background-color:rgb(250, 250, 250);
+    .heading{
+        position: relative;
+        h2{
+            @include HeadingH;
+        }
+        i{
+            @include IlineHead;
+        }
+        span{
+            @include lineHead;
+        }
+    }
+    .sec-contact{
+        margin-top: 50px;
+        position: relative;
+        .touch{
+            margin-top: 30px;
+        }
+        h3{
+            position: relative;
+            font-size: 17px;
+            font-weight: 600;
+            color: $skills;
+            font-family: 'Montserrat', sans-serif;
+            @include linesmall
+        }
+        .info{
+            margin-top: 30px;
+            .item{
+                position: relative;
+                .icon{
+                        color: #039be5;
+                        font-size: 40px;
+                        text-align: left;
+                        border-radius: 50%;
+                        left: -20px;
+                        position: absolute;
+                        cursor: pointer;
+                        top: -3px;
+                        opacity: 0.2;
+                        transition: all .5s ease-in-out; 
+                        &:hover{
+                            opacity: 0.9;
+                        }
+                }
+                div{
+                    margin-left: 27px;
+                    line-height: 1;
+                    margin-bottom: 30px;
+                    span{
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #000;
+                    }
+                    p{
+                        line-height: 1.2;
+                        margin-top: 10px;
+                        font-size: 15px;
+                        color: #777;
+                        a{
+                            color: #777;
+                            &:hover{
+                                text-decoration: none;
+                                color: #039be5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contact_form{
+            form{
+                input{
+                    margin-bottom: 20px;
+                }
+                textarea{
+                    height: 150px;
+                    margin-bottom: 20px;
+                }
+                button{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// body{
+//     .icon-top{
+//         position: relative;
+        
+//         // &:hover{
+//         //    &:before{
+//         //     content: attr(data-attr);
+//         //     position: absolute;
+//         //     top: -87px;
+//         //     font-family: monospace;
+//         //     right: -15px;
+//         //     color: #fff;
+//         //     background-color: #272727a6;
+//         //     padding: 6px;
+//         // }
+//         // &:after{
+//         //     content: "";
+//         //     position: absolute;
+//         //     top: -56px;
+//         //     right: 7px;
+//         //     border-top: 7px solid #727272;
+//         //     border-bottom: 12px solid transparent;
+//         //     border-left: 10px solid transparent;
+//         //     border-right: 11px solid transparent;
+//         //   } 
+//         // }
+        
+// }
+// }
+
+// .icon-top{
+//     display: inline-block;
+//     top: 6px;
+//     left: 788px;
+//     z-index: 9999;
+//     opacity: 0;
+// }
+
+// .icon-top{
+//     &:hover{
+//         &:before{
+//             content: attr(data-attr);
+//             position: absolute;
+//             top: -87px;
+//             font-family: monospace;
+//             right: -15px;
+//             color: #fff;
+//             background-color: #272727a6;
+//             padding: 6px;
+//         }
+//         &:after{
+//             content: "";
+//             position: absolute;
+//             top: -56px;
+//             right: 7px;
+//             border-top: 7px solid #727272;
+//             border-bottom: 12px solid transparent;
+//             border-left: 10px solid transparent;
+//             border-right: 11px solid transparent;
+//             } 
+//     }
+    
+// }
