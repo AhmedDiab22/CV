@@ -110,6 +110,12 @@ p.lead {
   width: 100%;
   border-radius: 12px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: all 0.9s ease-in-out;
+}
+.about .all-div .author-img-wrapper img:hover {
+  transform: rotateY(-180deg);
+  transition: all 0.9s ease-in-out;
 }
 .about .all-div .more-about-me span {
   color: #039be5 !important;
@@ -339,13 +345,24 @@ p.lead {
     display: block;
     letter-spacing: 1.5px;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 15px;
+    font-size: 13px;
     text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    color: #039be5;
+    transition: all 0.2s ease-in-out;
+    padding-left: 15px;
+    font-size: 15px;
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .active {
-    color: #fff;
+    color: #039be5;
   }
 }
+.nav {
+  overflow: hidden;
+}
+
 .resume {
   background-color: #fafafa;
 }
@@ -620,7 +637,7 @@ p.lead {
   margin-left: 15px;
   margin-right: 15px;
 }
-.portfolio .sec__content .gallery .row > div .over {
+.portfolio .sec__content .gallery .row > div:after {
   position: absolute;
   text-align: center;
   content: "";
@@ -633,19 +650,70 @@ p.lead {
   height: 100%;
   color: #fff;
   font-size: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   transition: all 0.9s ease-in-out;
   opacity: 0;
 }
-.portfolio .sec__content .gallery .row > div .over i {
+.portfolio .sec__content .gallery .row > div:after i {
   cursor: pointer;
+}
+.portfolio .sec__content .gallery .row > div:hover {
+  transition: all 0.5s ease-in-out;
+}
+.portfolio .sec__content .gallery .row > div:hover:after {
+  opacity: 1;
+}
+.portfolio .sec__content .gallery .row > div:hover img {
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s ease-in-out;
 }
 .portfolio .sec__content .gallery .row > div:hover .over {
   opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 .portfolio .sec__content .gallery .row > div img {
   width: 300px;
   height: 215px;
+  transition: all 0.5s ease-in-out;
+}
+.portfolio .sec__content .gallery .row > div .over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.portfolio .sec__content .gallery .row > div .over .a {
+  color: #fff;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  width: 20%;
+  float: left;
+}
+.portfolio .sec__content .gallery .row > div .over .b {
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  width: 20%;
+  float: left;
+}
+.portfolio .sec__content .gallery .row > div .over span {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  margin-left: -7px;
+}
+.portfolio .sec__content .gallery .row > div .over i:hover {
+  color: #039be5;
+}
+.portfolio .sec__content .gallery .row > div .over i:hover span {
+  color: #039be5;
 }
 .portfolio .mix {
   display: none;

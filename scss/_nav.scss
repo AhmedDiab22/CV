@@ -41,7 +41,6 @@
           padding: 6px;
           left: -10px;
           font-size: 11px;
-           
         }
         &:after{
           content: "";
@@ -122,14 +121,24 @@
                   display: block;
                   letter-spacing: 1.5px;
                   font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                  font-size: 15px;
+                  font-size: 13px;
                   text-transform: uppercase;
+                  transition: all .2s ease-in-out;
+                  &:hover{
+                    color: #039be5;
+                    transition: all .2s ease-in-out;
+                    padding-left: 15px;
+                    font-size: 15px;
+                  }
                 }
                 .active{
-                  color: #fff;
+                  color: #039be5;
                 }
               }
             }
           }
     }
 } 
+.nav{
+  overflow: hidden;
+}
